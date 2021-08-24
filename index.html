@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Vtube Studio API Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="dist/main.js" defer></script>
+    <style>
+        * {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px auto;
+            row-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><img id="icon" src="icon.png"/> Simple Vtube Studio API Example</h1>
+    <div class="grid-container">
+        <div>
+            <label for="websocket">Websocket:</label>
+        </div>
+        <div>
+            <div><input id="websocket" type="url" placeholder="Websocket" value="ws://127.0.0.1:8001"/><button id="connect">Connect</button></div>
+        </div>
+    </div>
+</body>
+</html>
