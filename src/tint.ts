@@ -20,7 +20,8 @@ window.pages.tintPage = function(){
                     let r = $('#red').val() as number;
                     let g = $('#green').val() as number;
                     let b = $('#blue').val() as number;
-                    model.colorTint({r, g, b}, {nameExact: selected});
+                    let a = $('#alpha').val() as number;
+                    model.colorTint({r, g, b, a}, {nameExact: selected});
                 }
                 $('#art_meshes').append(options)
                     .on('change', updateArtMeshTint);
