@@ -25,7 +25,7 @@ window.pages.tintPage = function(){
                 }
                 $('#art_meshes').append(options)
                     .on('change', updateArtMeshTint);
-                $('#red, #green, #blue').on('change', updateArtMeshTint);
+                $('#red, #green, #blue, #alpha').on('change', updateArtMeshTint);
                 $('#animate').on('click', function(){
                     if(interval == null){
                         let r = 255;
